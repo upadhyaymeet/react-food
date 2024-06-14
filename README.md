@@ -135,3 +135,11 @@ const MainComponent = () => {
 - working with dummy data
 - Read about key- key is important dom identifed the which unique id new component render
 - Virtual dom & Reconciliation and React fiber.
+
+
+## Refrences
+
+- Virtual DOM: https://reactjs.org/docs/faq-internals.html
+- Reconciliation: https://reactjs.org/docs/reconciliation.html
+- React Fiber Architecture: https://github.com/acdlite/react-fiber-architecture
+- React Without ES6: https://reactjs.org/docs/react-without-es6.html
