@@ -21,8 +21,11 @@
 - install react and react-dom
 `npm install react`
 `npm install react-dom`
-- configure package.json to start our app `npm start`
 
+**Laying Foundation**
+
+- configure package.json to start our app `npm start`
+- use jsx to create react element
 
 
 ## What i learn?
@@ -53,4 +56,35 @@
 - diff between devDependency vs dependency.
 - react and reactDOM.
 - Learn about virtualDOM.
+
+**Laying Foundation**
+
 - configure package.json file to start project and build project using npm command.
+- Learn about jsx.
+- Learn about babel, babel is transpiler and compiler.
+- Browser understands only es6 + or ecmmascripts.
+- jsx => (transpiled by babel) => React.createElement => ReactElement => JsOBJECT => htML RENDER
+- Jsx is html look like syntax.
+- jsx
+```js 
+const container = (
+    <div id="container">
+        <h1 className="heading">using jsx</h1>
+        <h2>Using jsx multine {name}</h2>
+    </div>
+)
+```
+- React.createElement
+```js 
+const parent = React.createElement("div", { id: "title" }, [
+  React.createElement("div", { id: "childone" }, [
+    React.createElement("h1", {}, "HeadingOne"),
+    React.createElement("h2", {}, "HeadingTwo"),
+  ]),
+  React.createElement("div", { id: "childtwo" }, [
+    React.createElement("h1", {}, "HeadingOne"),
+    React.createElement("h2", {}, "HeadingTwo"),
+  ]),
+]);
+```
+
