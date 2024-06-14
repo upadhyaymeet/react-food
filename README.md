@@ -1,5 +1,11 @@
 # Food APP
 
+## Overview of Food Project App.
+
+A basic React food app is built from scratch using parcel as a bundler.
+It's from scratch to create a react and learning about react in detail how the react works under hood.
+We use swiggy api to learn.
+
 ## Setup React Project From Scratch
 
 **Basic Of React**
