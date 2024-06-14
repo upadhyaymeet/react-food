@@ -4,6 +4,7 @@
 
 - index.html file created.
 - use react cdn to use react
+- Extract script tag into App.js file and clean up html file
 
 ## What i learn?
 
