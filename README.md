@@ -11,10 +11,17 @@
 **Project Intialization**
 
 - Project setup using npm.
-- setup node project `npm init`
-- install parcel using `npm install -D parcel`
-- run parcel project using `npx parcel index.html`
+- setup node project 
+`npm init`
+- install parcel using 
+`npm install -D parcel`
+- run parcel project using 
+`npx parcel index.html`
 - added browser list to package.json 
+- install react and react-dom
+`npm install react`
+`npm install react-dom`
+
 
 ## What i learn?
 
@@ -27,6 +34,8 @@
 - Render react element using ReactDOM.
 - Nested React Element Created.
 - React element is normal javascript object.
+- Library vs Framework.
+- Emmet and cross origin.
 
 **Project Intilization**
 
@@ -40,3 +49,5 @@
 - npm is used to install dependeceis.
 - npx is ignit those dependencies.
 - diff between devDependency vs dependency.
+- react and reactDOM.
+- Learn about virtualDOM.
