@@ -4,7 +4,9 @@
   "description": "A basic food delivery app",
   "main": "App.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "Meet Upadhyay",
   "license": "ISC",

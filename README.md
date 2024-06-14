@@ -1,6 +1,6 @@
 # Food APP
 
-## Setup React Project From Scratch?
+## Setup React Project From Scratch
 
 **Basic Of React**
 
@@ -21,6 +21,8 @@
 - install react and react-dom
 `npm install react`
 `npm install react-dom`
+- configure package.json to start our app `npm start`
+
 
 
 ## What i learn?
@@ -51,3 +53,4 @@
 - diff between devDependency vs dependency.
 - react and reactDOM.
 - Learn about virtualDOM.
+- configure package.json file to start project and build project using npm command.
