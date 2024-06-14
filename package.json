@@ -7,5 +7,11 @@
     "test": "jest"
   },
   "author": "Meet Upadhyay",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  },
+  "browsersList":[
+    "last 2 versions"
+  ]
 }
