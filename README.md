@@ -51,6 +51,11 @@ We use swiggy api to learn.
 - footer with links
 - Restaurant card with map function.
 
+**Let's Get Hooked**
+
+- Clean code & folder structure created
+- src folder & components & utils all files.
+
 ## What i learn?
 
 **Basic of React**
@@ -143,6 +148,13 @@ const MainComponent = () => {
           ))}
         </div>
 ```
+
+**Let's Get Hooked**
+
+- import & export.
+- named export and default export.
+- folder structure, components & constants.
+- 
 
 ## Refrences
 
