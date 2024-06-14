@@ -8,7 +8,7 @@ const resList = [
       areaName: "Akota",
       costForTwo: "₹250 for two",
       cuisines: ["Chinese", "Asian", "Tibetan", "Desserts"],
-      avgRating: 4.3,
+      avgRating: 3.0,
       veg: true,
       parentId: "61955",
       avgRatingString: "4.3",

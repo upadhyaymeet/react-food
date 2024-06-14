@@ -55,6 +55,8 @@ We use swiggy api to learn.
 
 - Clean code & folder structure created
 - src folder & components & utils all files.
+- useState hook is used to change in UI.
+- onClick method used on top rated restaurant Button
 
 ## What i learn?
 
@@ -154,7 +156,32 @@ const MainComponent = () => {
 - import & export.
 - named export and default export.
 - folder structure, components & constants.
-- 
+- hooks - is javascript pre written functions
+- useState hook
+```js
+  const [first, second] = useState() //intial value
+   //use State hook call
+  const [listOfRestaurants, setListOfRestaurants] = useState(resList)
+```
+- whenever use state variable update it re-render the components using diffing alogorithm, reconciliation
+
+- onClick function in Top rated button, function takes callback function.
+```js 
+ <button
+          className="top-res"
+          onClick={() => {
+            const filteredRestaurant = listOfRestaurants.filter(
+              (res) => res.info.avgRating > 4
+            );
+            console.log(filteredRestaurant)
+            setListOfRestaurants(filteredRestaurant)
+          }}
+        >
+          Top Rated Restaurant
+        </button>
+```
+
+
 
 ## Refrences
 
