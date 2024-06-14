@@ -49,6 +49,7 @@ We use swiggy api to learn.
 - Header with logo & nav list.
 - Body with RestaurantContainer, Restaurant Card, search functionality.
 - footer with links
+- Restaurant card with map function.
 
 ## What i learn?
 
@@ -128,4 +129,9 @@ const MainComponent = () => {
 
 **Planning UI**
 
--
+- config driven UI
+- Array.map method to render all the cards with Dynamic data
+- props and props passing as argument and destructuring
+- working with dummy data
+- Read about key- key is important dom identifed the which unique id new component render
+- Virtual dom & Reconciliation and React fiber.
