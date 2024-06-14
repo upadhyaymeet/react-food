@@ -135,7 +135,14 @@ const MainComponent = () => {
 - working with dummy data
 - Read about key- key is important dom identifed the which unique id new component render
 - Virtual dom & Reconciliation and React fiber.
-
+- Map to render restaurant card.
+```js 
+ <div className="res-container">
+          {resList.map((res)=>(
+            <RestaurantCard key={res?.info?.id} resData={res} />
+          ))}
+        </div>
+```
 
 ## Refrences
 
