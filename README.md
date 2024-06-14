@@ -6,6 +6,15 @@ A basic React food app is built from scratch using parcel as a bundler.
 It's from scratch to create a react and learning about react in detail how the react works under hood.
 We use swiggy api to learn.
 
+## Features
+
+- Food app has a good UI.
+- top rated Restaturant list shown and menu items.
+- config driven ui, data changed accordingly api.
+- Dynamic website data comes from api.
+- add to cart food item.
+- search functionality.
+
 ## Setup React Project From Scratch
 
 **Basic Of React**
@@ -34,6 +43,12 @@ We use swiggy api to learn.
 - use jsx to create react element
 - use React Component
 - use Functional Component.
+
+**Plannig of UI**
+
+- Header with logo & nav list.
+- Body with RestaurantContainer, Restaurant Card, search functionality.
+- footer with links
 
 ## What i learn?
 
@@ -110,3 +125,7 @@ const MainComponent = () => {
   );
 };
 ```
+
+**Planning UI**
+
+-
