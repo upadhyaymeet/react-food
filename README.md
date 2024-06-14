@@ -26,7 +26,8 @@
 
 - configure package.json to start our app `npm start`
 - use jsx to create react element
-
+- use React Component
+- use Functional Component.
 
 ## What i learn?
 
@@ -87,4 +88,19 @@ const parent = React.createElement("div", { id: "title" }, [
   ]),
 ]);
 ```
-
+- React functional component
+- React functional component using composition of component.
+```js 
+//component composition in functional component
+const number = 1000
+//javascipt with jsx
+const MainComponent = () => {
+  return (
+    <div id="container">
+        {number}
+      <HeadingComponent />
+      <TitleComponent />
+    </div>
+  );
+};
+```
