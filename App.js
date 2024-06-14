@@ -781,13 +781,13 @@ const RestaurantCard = ({resData}) => {
   // console.log(name, avgRating, areaName, cloudinaryImageId, cuisines, costForTwo);
   // console.log(deliveryTime);
   return(
-    <div>
-        <div>
+    <div className="res-card">
+        <div className="res-img">
           <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId} />
         </div>
-        <div>
-         <h1>{name}</h1>
-         <h2>{cuisines}</h2>
+        <div className="res-info">
+         <div>{name}</div>
+         <div>{cuisines.join(",")}</div>
          <div>
           <span>{costForTwo}</span>
           <span>{deliveryTime}</span>
@@ -801,8 +801,8 @@ const RestaurantCard = ({resData}) => {
 
 const Body = () => {
   return(
-    <div>
-        <div>
+    <div className="container">
+        <div className="search-container">
           <button>Top Rated Restaurant</button>
         </div>
         <div className="res-container">
