@@ -64,6 +64,7 @@ We use swiggy api to learn.
 - download extension of cros to bypass security.
 - use useEffect to load a fetchData function for fetching data.
 - update the list with update data with complex api.
+- shimmer ui load using conditional rendering.
 
 ## What i learn?
 
@@ -198,11 +199,25 @@ const MainComponent = () => {
   useEffect(()=>{
     //Callback function calls after whole the component got render
   },[])
+
+    // to fetch the data from api
+
+    const fetchData = async () => {
+    const data = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.3071588&lng=73.1812187&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+    );
+    const json = await data.json();
+    // console.log(json);
+    setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    // console.log(listOfRestaurants);
+    // console.log(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+  };
 ```
 - fetch() function to fetch the data from api and alternate of fetch is axios.
 - then & catch method, async & await.
 - CORS & CORS policy.
 - update the fetch data.
+- Shimmer UI and loader to see animate the data is load.
 
 
 ## Refrences
