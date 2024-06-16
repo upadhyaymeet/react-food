@@ -23,13 +23,15 @@ const Body = () => {
     // console.log(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   };
 
-  if(listOfRestaurants.length === 0){
-    return <h1>Loading...</h1>
-  }
+  // if(listOfRestaurants.length === 0){
+  //   return <h1>Loading...</h1>
+  // }
 
 
-
-  return (
+  
+  return listOfRestaurants.length === 0 ? (
+    <h1>Loading...</h1>
+  ):(
     <div className="container">
       <div className="search-container">
         <button

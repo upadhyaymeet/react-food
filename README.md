@@ -65,6 +65,7 @@ We use swiggy api to learn.
 - use useEffect to load a fetchData function for fetching data.
 - update the list with update data with complex api.
 - shimmer ui load using conditional rendering.
+- ternary operator
 
 ## What i learn?
 
@@ -218,6 +219,7 @@ const MainComponent = () => {
 - CORS & CORS policy.
 - update the fetch data.
 - Shimmer UI and loader to see animate the data is load.
+- ternary operator .
 
 
 ## Refrences
