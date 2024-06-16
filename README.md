@@ -58,6 +58,13 @@ We use swiggy api to learn.
 - useState hook is used to change in UI.
 - onClick method used on top rated restaurant Button
 
+**External World**
+
+- swiggy live api use to fetch data.
+- download extension of cros to bypass security.
+- use useEffect to load a fetchData function for fetching data.
+- update the list with update data with complex api.
+
 ## What i learn?
 
 **Basic of React**
@@ -181,6 +188,21 @@ const MainComponent = () => {
         </button>
 ```
 
+**External World**
+
+- Monolith and Microservices
+- Communication Channels & Ports & Domain Mapping
+- Load and Render & Render First Fetch Later
+- useEffect hook
+```js
+  useEffect(()=>{
+    //Callback function calls after whole the component got render
+  },[])
+```
+- fetch() function to fetch the data from api and alternate of fetch is axios.
+- then & catch method, async & await.
+- CORS & CORS policy.
+- update the fetch data.
 
 
 ## Refrences
