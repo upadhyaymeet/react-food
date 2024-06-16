@@ -66,6 +66,7 @@ We use swiggy api to learn.
 - update the list with update data with complex api.
 - shimmer ui load using conditional rendering.
 - ternary operator
+- Login and logout button added
 
 ## What i learn?
 
@@ -220,6 +221,8 @@ const MainComponent = () => {
 - update the fetch data.
 - Shimmer UI and loader to see animate the data is load.
 - ternary operator .
+- detailed about useState.
+- Learn about login and logout button
 
 
 ## Refrences
