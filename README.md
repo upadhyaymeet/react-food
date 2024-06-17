@@ -77,7 +77,7 @@ We use swiggy api to learn.
 - Created nested router using children.
 - Outlet function used.
 - other component created contact and about.
-- ErrorPage created
+- ErrorPage created using useError Method.
 
 
 
@@ -276,6 +276,8 @@ const MainComponent = () => {
 - react router dom install learn about dom in detail.
 - createbrowser router and router provide in detail.
 - Nested router learn in detail and learning about outlet component.
+- learn about other component, useRouteError to display unmatched route error.
+- learn more about Error Element in router.
 
 
 
