@@ -87,6 +87,12 @@ We use swiggy api to learn.
 - class lifeCycle component created.
 - props passing state.
 
+**Optimizing App**
+
+- Custom Hook created to fetch data.
+- useRestaurantMenu & useRestaurantCard, UseOnlineStatus.
+- Online & Offline internet feature added.
+- LazyLoading and supesene.
 
 ## What i learn?
 
@@ -341,6 +347,10 @@ root.render(<RouterProvider router={appRouter} />);
 - LifeCylce of Classbased component.
 - props, super, constructor.
 
+**Optimizing App**
+
+- Lazy Loading, app chunking.
+- learning about Suspensen.
 
 ## Refrences
 
@@ -355,3 +365,5 @@ root.render(<RouterProvider router={appRouter} />);
 - Formik - https://formik.org
 - React Life Cycle Method Diagram -
 https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+- https://reactjs.org/docs/hooks-custom.html
+- https://beta.reactjs.org/apis/react/lazy#suspense-for-code-splitting
