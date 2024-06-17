@@ -9,11 +9,11 @@ const RestaurantCard = ({ resData }) => {
   // console.log(deliveryTime);
 
   return (
-    <div className="res-card">
-      <div className="res-img">
-        <img src={CDN_URL + cloudinaryImageId} />
+    <div className="w-48 border-solid border-2 border-black p-2">
+      <div className="">
+        <img className="size-40" src={CDN_URL + cloudinaryImageId} />
       </div>
-      <div className="res-info">
+      <div className="size-40">
         <div>{name}</div>
         <div>{cuisines.join(",")}</div>
         <div>
