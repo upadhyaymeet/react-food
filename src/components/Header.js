@@ -3,11 +3,14 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 const Header = () => {
 const [btnName, setBtnName] = useState("Login")
 const onlineStatus = useOnlineStatus()
 const data = useContext(UserContext)
+const cartItems = useSelector((store)=>store.cart.items)
+
 
   return (
     <div className="p-2 flex justify-around w-screen bg-orange-500">
@@ -24,7 +27,7 @@ const data = useContext(UserContext)
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/cart">Cart</Link></li>
+          <li><Link to="/cart">Cart : {cartItems.length}</Link></li>
           <li><button className="px-5 text-orange-500 bg-white font-bold rounded-lg"  onClick={()=>{
             btnName === "Login" ? setBtnName("Logout") : setBtnName("Login")
           }}>{btnName}</button></li>
