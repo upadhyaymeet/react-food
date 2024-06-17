@@ -379,6 +379,18 @@ const useRestaurantCard = () =>{
 export default useRestaurantCard;
 ```
 - online and offline status using window.add evenet listner.
+- lazy loading and suspense.
+```js
+const Grocery = lazy(()=>import("./components/Grocery"))
+    {
+        path:"grocery",
+        element:(
+          <Suspense>
+            <Grocery />
+          </Suspense>
+        )
+      }
+```
 
 ## Refrences
 
