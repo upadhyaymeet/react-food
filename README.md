@@ -14,6 +14,7 @@ We use swiggy api to learn.
 - Dynamic website data comes from api.
 - add to cart food item.
 - search functionality.
+- online & offline functionality added.
 
 ## Setup React Project From Scratch
 
@@ -91,8 +92,9 @@ We use swiggy api to learn.
 
 - Custom Hook created to fetch data.
 - useRestaurantMenu & useRestaurantCard, UseOnlineStatus.
-- Online & Offline internet feature added.
+- Online & Offline internet feature added with window.addEventListner with custom hook.
 - LazyLoading and supesene.
+
 
 ## What i learn?
 
@@ -376,6 +378,7 @@ const useRestaurantCard = () =>{
 }
 export default useRestaurantCard;
 ```
+- online and offline status using window.add evenet listner.
 
 ## Refrences
 
