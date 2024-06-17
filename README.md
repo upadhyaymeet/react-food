@@ -78,6 +78,8 @@ We use swiggy api to learn.
 - Outlet function used.
 - other component created contact and about.
 - ErrorPage created using useError Method.
+- RestaurantMenu page created and fetch dynamic data menu items.
+- useParams, Link component and fetch data
 
 
 
@@ -278,6 +280,54 @@ const MainComponent = () => {
 - Nested router learn in detail and learning about outlet component.
 - learn about other component, useRouteError to display unmatched route error.
 - learn more about Error Element in router.
+- Learn more about router useParams , Link Component.
+- Dynamic restaurant menu page learning.
+
+```js
+
+const AppLayout = () => {
+  return (
+    <div>
+      <Header />
+      {/* <Body /> */}
+      <Outlet />
+      <Footer />
+    </div>
+  );
+};
+
+//app router using react-router-dom
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+    children:[
+      {
+        path:"",
+        element:<Body />
+      },
+      {
+        path:"about",
+        element:<About />
+      },
+      {
+        path:"contact",
+        element:<Contact />
+      },
+      {
+        path:"restaurant/:resId",
+        element:<RestaurantMenu />
+      }
+    ],
+    errorElement:<ErrorPage />,
+  },
+]);
+
+//render react element or jsx using reactDOM method
+const root = ReactDOM.createRoot(document.querySelector("#root"));
+root.render(<RouterProvider router={appRouter} />);
+
+```
 
 
 
