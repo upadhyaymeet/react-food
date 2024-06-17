@@ -67,6 +67,8 @@ We use swiggy api to learn.
 - shimmer ui load using conditional rendering.
 - ternary operator
 - Login and logout button added
+- search functionality added and onChange event and value binding with value and created another useState.
+- copy of filtered Restaurant and get data into it.
 
 ## What i learn?
 
@@ -221,9 +223,38 @@ const MainComponent = () => {
 - update the fetch data.
 - Shimmer UI and loader to see animate the data is load.
 - ternary operator .
-- detailed about useState.
-- Learn about login and logout button
-
+- detailed about useState. 
+- Learn about login and logout button text changed using useState.
+- search functionality with includes and toLowerCase Method..
+- learn about onChange and get text from input box.
+- includes method & binding value with text box.
+- Copy for filtered restaurants data.
+- OnChange Example.
+```js
+  <div>
+          <input
+            type="text"
+            value={searchText}
+            onChange={(e) => {
+              setSearchText(e.target.value);
+            }}
+            placeholder="What You are looking for?"
+          />
+          <button
+            onClick={() => {
+              // console.log(searchText);
+              const filterRestaurant = listOfRestaurants.filter((res) => {
+                return res.info.name
+                  .toLowerCase()
+                  .includes(searchText.toLowerCase());
+              });
+              setFilteredRestaurant(filterRestaurant);
+            }}
+          >
+            Search
+          </button>
+        </div>
+```
 
 ## Refrences
 

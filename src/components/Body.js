@@ -4,7 +4,9 @@ import { useEffect, useState } from "react";
 
 const Body = () => {
   //use State hook call
-  const [listOfRestaurants, setListOfRestaurants] = useState([])
+  const [listOfRestaurants, setListOfRestaurants] = useState([]);
+  const [filteredRestaurant, setFilteredRestaurant] = useState([]);
+  const [searchText, setSearchText] = useState("");
 
   // https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.3071588&lng=73.1812187&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING
 
@@ -18,7 +20,12 @@ const Body = () => {
     );
     const json = await data.json();
     // console.log(json);
-    setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    setListOfRestaurants(
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
+    setFilteredRestaurant(
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
     // console.log(listOfRestaurants);
     // console.log(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   };
@@ -27,11 +34,9 @@ const Body = () => {
   //   return <h1>Loading...</h1>
   // }
 
-
-  
   return listOfRestaurants.length === 0 ? (
     <h1>Loading...</h1>
-  ):(
+  ) : (
     <div className="container">
       <div className="search-container">
         <button
@@ -46,9 +51,32 @@ const Body = () => {
         >
           Top Rated Restaurant
         </button>
+        <div>
+          <input
+            type="text"
+            value={searchText}
+            onChange={(e) => {
+              setSearchText(e.target.value);
+            }}
+            placeholder="What You are looking for?"
+          />
+          <button
+            onClick={() => {
+              // console.log(searchText);
+              const filterRestaurant = listOfRestaurants.filter((res) => {
+                return res.info.name
+                  .toLowerCase()
+                  .includes(searchText.toLowerCase());
+              });
+              setFilteredRestaurant(filterRestaurant);
+            }}
+          >
+            Search
+          </button>
+        </div>
       </div>
       <div className="res-container">
-        {listOfRestaurants.map((res) => (
+        {filteredRestaurant.map((res) => (
           <RestaurantCard key={res?.info?.id} resData={res} />
         ))}
       </div>
