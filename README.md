@@ -72,6 +72,10 @@ We use swiggy api to learn.
 
 **Finding The Path**
 
+- install react-router-dom for spa `npm install react-router-dom`.
+- import createBrowserRouter and RouterProvider other functions from react-router-dom.
+- Created nested router using children.
+- Outlet function used.
 
 
 
@@ -267,6 +271,12 @@ const MainComponent = () => {
 - Dependency array in useEffect.
 - Single Page Application.
 - Client Side Routing & Server Side Routing.
+- react router dom install learn about dom in detail.
+- createbrowser router and router provide in detail.
+- Nested router learn in detail and learning about outlet component.
+
+
+
 
 ## Refrences
 
@@ -276,3 +286,8 @@ const MainComponent = () => {
 - React Without ES6: https://reactjs.org/docs/react-without-es6.html
 - Index Keys as Anti-Pattern:
     https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/
+- React Router DOM - https://reactrouter.com/en/main
+- Client Side Routing - https://reactrouter.com/en/main/start/overview
+- Formik - https://formik.org
+- React Life Cycle Method Diagram -
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
