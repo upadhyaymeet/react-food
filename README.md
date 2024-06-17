@@ -70,6 +70,11 @@ We use swiggy api to learn.
 - search functionality added and onChange event and value binding with value and created another useState.
 - copy of filtered Restaurant and get data into it.
 
+**Finding The Path**
+
+
+
+
 ## What i learn?
 
 **Basic of React**
@@ -255,6 +260,13 @@ const MainComponent = () => {
           </button>
         </div>
 ```
+
+**Finding The Path**
+
+- Detailed about useState and useEffect
+- Dependency array in useEffect.
+- Single Page Application.
+- Client Side Routing & Server Side Routing.
 
 ## Refrences
 
