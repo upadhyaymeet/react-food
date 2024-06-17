@@ -107,6 +107,13 @@ We use swiggy api to learn.
 - ItemList, RestaurantCategory created.
 - Lifting state up and context provider.
 
+**Build Store**
+
+- Install react-redux and toolKit.
+`npm install react-redux npm install @reduxjs/toolkit`
+- create a appStore.
+- create a slice.
+
 
 ## What i learn?
 
@@ -434,6 +441,50 @@ export default UserContext;
       <Footer />
     </UserContext.Provider>
 ```
+
+**Build Store**
+
+- Learn about redux and redux toolkit.
+- Learn about slice, store, thunk, reducers.
+```js
+//store
+import { configureStore } from "@reduxjs/toolkit";
+import cartReducer from "./cartSlice";
+
+const appStore = configureStore({
+  reducer: {
+    cart: cartReducer,
+  },
+});
+
+export default appStore;
+//slice
+import { createSlice } from "@reduxjs/toolkit";
+
+const cartSlice = createSlice({
+    name:"cart",
+    initialState:{
+        items:[]
+    },
+    reducers:{
+        addItem:(state, action) =>{
+            state.items.push(action.payload)
+        },
+        removeItem:(state, action)=>{
+            state.items.pop();
+        },
+        clearCart:(state)=>{
+            state.items.length = 0
+        }
+    }
+})
+
+export const {addItem, removeItem, clearCart} = cartSlice.actions
+
+export default cartSlice.reducer
+
+```
+
 
 ## Refrences
 
