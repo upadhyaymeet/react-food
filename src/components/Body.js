@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import RestaurantCard from "./RestaurantCard";
 // import resList from "../utils/mockData";
 import { useEffect, useState } from "react";
@@ -77,7 +78,9 @@ const Body = () => {
       </div>
       <div className="res-container">
         {filteredRestaurant.map((res) => (
-          <RestaurantCard key={res?.info?.id} resData={res} />
+          <Link key={res?.info?.id} to={`/restaurant/${res?.info?.id}`}>
+            <RestaurantCard  resData={res} />
+          </Link>
         ))}
       </div>
     </div>
