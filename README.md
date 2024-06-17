@@ -102,6 +102,12 @@ We use swiggy api to learn.
 - create a .postcssrc in root folder.
 - config tailwind.config.js file.
 
+**Context Provider**
+
+- ItemList, RestaurantCategory created.
+- Lifting state up and context provider.
+
+
 ## What i learn?
 
 **Basic of React**
@@ -404,6 +410,30 @@ const Grocery = lazy(()=>import("./components/Grocery"))
 - tailwind install, postcss learn about classes.
 - learn about all other css utility framework.
 
+**Context Provider**
+
+- Learn about prop drilling.
+- Lifiting State Up.
+- higher order components.
+- Context provider.
+
+```js 
+import { createContext } from "react";
+
+const UserContext = createContext({
+  loggedInUser: "Default User",
+});
+
+export default UserContext;
+
+// Provider
+ <UserContext.Provider value={{loggedInUser:userName, setUserName}}>
+      <Header />
+      {/* <Body /> */}
+      <Outlet />
+      <Footer />
+    </UserContext.Provider>
+```
 
 ## Refrences
 
