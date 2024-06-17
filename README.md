@@ -76,6 +76,8 @@ We use swiggy api to learn.
 - import createBrowserRouter and RouterProvider other functions from react-router-dom.
 - Created nested router using children.
 - Outlet function used.
+- other component created contact and about.
+- ErrorPage created
 
 
 
