@@ -95,6 +95,12 @@ We use swiggy api to learn.
 - Online & Offline internet feature added with window.addEventListner with custom hook.
 - LazyLoading and supesene.
 
+**Tailwind CSS**
+
+- Tailwind css install `npm install -D tailwindcss postcss`
+- Igniting tailwind css `npx tailwindcss init`
+- create a .postcssrc in root folder.
+- config tailwind.config.js file.
 
 ## What i learn?
 
@@ -392,6 +398,13 @@ const Grocery = lazy(()=>import("./components/Grocery"))
       }
 ```
 
+**Tailwind CSS**
+
+- Configure Tailwind css into your project.
+- tailwind install, postcss learn about classes.
+- learn about all other css utility framework.
+
+
 ## Refrences
 
 - Virtual DOM: https://reactjs.org/docs/faq-internals.html
@@ -407,3 +420,7 @@ const Grocery = lazy(()=>import("./components/Grocery"))
 https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 - https://reactjs.org/docs/hooks-custom.html
 - https://beta.reactjs.org/apis/react/lazy#suspense-for-code-splitting
+- https://styled-components.com/
+- https://tailwindcss.com/
+- https://getbootstrap.com/
+- Material UI - https://mui.com/
