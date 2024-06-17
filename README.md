@@ -81,6 +81,11 @@ We use swiggy api to learn.
 - RestaurantMenu page created and fetch dynamic data menu items.
 - useParams, Link component and fetch data
 
+**Let's Get Classy**
+
+- About and userClass class based component.
+- class lifeCycle component created.
+- props passing state.
 
 
 ## What i learn?
@@ -329,7 +334,12 @@ root.render(<RouterProvider router={appRouter} />);
 
 ```
 
+**Let's Get Classy**
 
+- Classbased components.
+- ComponentDidMount, componentWillAnmout.
+- LifeCylce of Classbased component.
+- props, super, constructor.
 
 
 ## Refrences
